@@ -34,7 +34,7 @@ RUN pip install onnx-simplifier>=0.3.6
 RUN pip install nvidia-pyindex
 RUN pip install onnx-graphsurgeon
 #segmentation_models_torch 依赖库 ---start---
-RUN apt-get install -y libfluidsynth1
+RUN apt-get -qq install -y libfluidsynth1
 RUN apt-get -qq install -y libarchive-dev
 RUN apt-get -qq install -y graphviz
 #segmentation_models_torch 依赖库 ---end---
