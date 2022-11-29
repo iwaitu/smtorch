@@ -39,7 +39,6 @@ RUN apt-get -qq install -y libarchive-dev
 RUN apt-get -qq install -y graphviz
 RUN apt install libgeos++-dev -y
 RUN apt install libproj-dev proj-data proj-bin -y
-RUN apt install libproj15 -y
 RUN apt install python3-pip -y
 RUN pip install --upgrade pip
 #segmentation_models_torch 依赖库 ---end---
