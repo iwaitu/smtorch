@@ -37,7 +37,11 @@ RUN pip install onnx-graphsurgeon
 RUN apt-get -qq install -y libfluidsynth1
 RUN apt-get -qq install -y libarchive-dev
 RUN apt-get -qq install -y graphviz
-RUN apt-get -qq install -y libgeos++-dev libgeos-3.7.2 libgeos-c1v5 libgeos-dev libgeos-doc
+RUN apt install libgeos++-dev -y
+RUN apt install libproj-dev proj-data proj-bin -y
+RUN apt install libproj15 -y
+RUN apt install python3-pip -y
+RUN pip install --upgrade pip
 #segmentation_models_torch 依赖库 ---end---
 #segmentation_models_torch 依赖库 ---start---
 RUN pip install matplotlib-venn
