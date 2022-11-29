@@ -20,6 +20,7 @@ RUN wget \
     && conda --version
 
 RUN conda --version
+RUN source .bashrc
 RUN pip install pycocotools
 RUN pip3 install opencv-python
 RUN pip install opencv-contrib-python -i https://pypi.tuna.tsinghua.edu.cn/simple
@@ -46,7 +47,7 @@ RUN pip install --upgrade pip
 RUN pip install matplotlib-venn
 RUN pip install -U libarchive
 RUN pip install pydot
-RUN pip install cartopy
+RUN pip install cartopy==0.19.0.post1
 RUN pip install -U segmentation-models-pytorch albumentations --user
 #segmentation_models_torch 依赖库 ---end---
 
