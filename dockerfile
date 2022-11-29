@@ -20,7 +20,6 @@ RUN wget \
     && conda --version
 
 RUN conda --version
-RUN source .bashrc
 RUN pip install pycocotools
 RUN pip3 install opencv-python
 RUN pip install opencv-contrib-python -i https://pypi.tuna.tsinghua.edu.cn/simple
