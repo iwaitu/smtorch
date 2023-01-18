@@ -30,6 +30,7 @@ RUN python -m pip install 'git+https://github.com/facebookresearch/detectron2.gi
 RUN git clone https://github.com/WongKinYiu/yolov7.git
 RUN pip install -r yolov7/requirements.txt
 RUN pip install onnx>=1.9.0
+RUN pip install onnxruntime-gpu
 RUN pip install onnx-simplifier>=0.3.6
 RUN pip install nvidia-pyindex
 RUN pip install onnx-graphsurgeon
